@@ -1,0 +1,282 @@
+/* Paleta de colores:
+Amarillo    #EAC926;
+Azul        #03264C;
+Celeste     #1259c3;
+Gris oscuro #666;
+Gris claro  #ebebeb;
+Verde       #39b54a;
+
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Roboto;
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+/* Partes del header */
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    width: 200px;
+}
+.main-header-msg {
+    font-weight: 400;
+    text-align: center;
+}
+.main-header-top-bar h2 {
+    font-size: 16px;
+    font-weight: lighter;
+}
+.burger-button{
+    color: #FFFFFF;
+    background-color: #03264C;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.main-navbar {
+    padding-top: 30px;
+    display: none;
+}
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display:inline-block;
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+/* Partes del main */
+main {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 240px;
+}
+main h3 {
+    font-size: 24px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    /* box-shadow: 5px 5px 10px grey;
+    transition: 0.5s; */
+    
+}
+/* .product-container :hover{
+    box-shadow: 5px 5px 5px grey;
+    background-color:rgb(116, 7, 7);
+} */
+
+.product {
+    background-color: #ffffff;
+    margin: 10px;
+    width: 350px;
+}
+
+
+
+
+
+.product img {
+    width: 100%;
+}
+
+.product-info {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+
+
+.product i {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: 3s;
+}
+.product i:hover{
+    transform: rotateZ(180deg);
+}
+.price {
+    font-size: 18px;
+    width: 30%;
+}
+.discount {
+    font-size: 16px;
+    color: #39b54a;
+    width: 70%;
+}
+.description {
+    font-size: 16px;
+    color: #666;
+    display: none;
+    margin-top: 10px;
+    
+}
+
+
+/* Partes del footer */
+footer {
+    font-size: 12px;
+    line-height: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+.footer-section {
+    color: #666;
+}
+
+.footer-section  i,
+.footer-section h4{
+    margin: 0 auto;
+}
+
+.footer-section p{
+    margin-top: 0;
+}
+
+footer i {
+    color: #1259c3;
+    font-size: 24px;
+}
+
+/* Reactive */
+@media (min-width: 361px) {
+    .product {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 768px) {
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-header-msg {
+        max-width: 350px;
+        text-align: right;
+    }
+    .burger-button {
+        display: none;
+    }
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar li {
+        margin: 0 5px;
+    }
+    main {
+        margin-top: 145px;
+    }
+    .description {
+        display: block;
+    }
+}
+
+@media (min-width:1200px) {
+    .logo {
+        width: 250px;
+    }
+    .main-header-top-bar, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .main-navbar {
+        margin-top: 50px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+    .main-header-msg {
+        max-width: none;
+        font-size: 22px;
+    }
+    main {
+        margin-top: 240px;
+    }
+    .product-container {
+        flex-wrap: nowrap;
+    }
+}
+
+/* .article i{
+    display:flex;
+    font-size: 16px;
+    padding: 5px;
+    width: 19px;
+    height :18px;
+    color: green;
+    border: 1px solid green;
+    border-radius: 50%;
+    position: absolute;
+    right: o;
+    top: -15px;
+} */
+
+
+/* h2{
+    font-size:24px;
+}
+
+p{
+    font-size:18px;
+}
+p1{
+    font-size:16px;
+}
+p2{
+    font-size:16px;
+    font-weight:bolder;
+    
+} */

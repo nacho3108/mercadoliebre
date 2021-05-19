@@ -1,0 +1,25 @@
+{
+  "name": "mercado-liebre",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nacho3108/mercadoliebre.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/nacho3108/mercadoliebre/issues"
+  },
+  "homepage": "https://github.com/nacho3108/mercadoliebre#readme",
+  "description": ""
+}
