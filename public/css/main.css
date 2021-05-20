@@ -22,16 +22,18 @@ body {
     font-family: Roboto;
     text-align: center;
     background-color: #ebebeb;
+    box-sizing: border-box;
 }
 
 /* Partes del header */
 .main-header {
     background-color: #EAC926;
-    padding: 20px;
-    position: fixed;
+    padding: 0px;
+    position: relative;
     width: 100%;
     top: 0;
     z-index: 100;
+    margin: 0px;
 }
 .logo {
     width: 200px;
@@ -56,7 +58,7 @@ body {
     margin: auto;
 }
 .main-navbar {
-    padding-top: 30px;
+    padding-top: 20px;
     display: none;
 }
 .main-navbar ul {
@@ -79,8 +81,20 @@ main {
     margin: 0 auto;
     margin-top: 240px;
 }
-main h3 {
-    font-size: 24px;
+
+.last-visit {
+    text-align: center;
+    text-decoration-color: #222222;
+    text-shadow: rgb(100, 100, 100, 10);
+    font-size: 36px;
+    padding: 20px;
+}
+.oferts {
+    text-align: center;
+    text-decoration-color: #222222;
+    text-shadow: rgb(100, 100, 100, 10);
+    font-size: 36px;
+    padding: 20px;
 }
 
 .product-container {
@@ -88,9 +102,10 @@ main h3 {
     flex-wrap: wrap;
     justify-content: center;
     
-    /* box-shadow: 5px 5px 10px grey;
-    transition: 0.5s; */
-    
+    transition: 0.5s;
+}
+.product-container :hover{
+    box-shadow: 5px 5px 10px grey;
 }
 .banner{
     width: 100vw;
@@ -105,9 +120,10 @@ main h3 {
 
 .product {
     background-color: #ffffff;
-    margin: 10px;
+    margin: 0px;
     width: 350px;
 }
+
 
 
 
@@ -156,13 +172,12 @@ main h3 {
 }
 .description {
     font-size: 16px;
-    color: #666;
-    display: none;
     margin-top: 10px;
-    display: none;
+    opacity: 0;
+    transition: 0.5s;
 }
 .product-info :hover{
-        display: block;
+        opacity: 1;
     }
 
 
