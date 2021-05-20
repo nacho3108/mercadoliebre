@@ -92,6 +92,12 @@ main h3 {
     transition: 0.5s; */
     
 }
+.banner{
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 /* .product-container :hover{
     box-shadow: 5px 5px 5px grey;
     background-color:rgb(116, 7, 7);
@@ -153,8 +159,13 @@ main h3 {
     color: #666;
     display: none;
     margin-top: 10px;
-    
+    display: none;
 }
+.product-info :hover{
+        display: block;
+    }
+
+
 
 
 /* Partes del footer */
@@ -216,10 +227,8 @@ footer i {
     main {
         margin-top: 145px;
     }
-    .description {
-        display: block;
-    }
 }
+
 
 @media (min-width:1200px) {
     .logo {
